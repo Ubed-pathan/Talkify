@@ -1,0 +1,16 @@
+{
+  "name": "talki_app",
+  "version": "1.0.0",
+  "scripts": {
+    "preinstall": "npm install --prefix talki_client && npm install --prefix talki_server",
+    "build": "npm run build --prefix talki_client && npm run build --prefix talki_server",
+    "start": "node talki_server/dist/index.js",
+    "dev": "concurrently \"npm run dev --prefix talki_server\" \"npm run dev --prefix talki_client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "engines": {
+    "node": "20.x" 
+  }
+}
