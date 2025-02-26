@@ -26,6 +26,7 @@ const authenticateUser = (
   const securePaths = [
     "/message",
     "/message/getMessages",
+    "/message/image",
     "/onRefreshGetUserData",
     "/getContactedUser",
     "/getAllUsers",

@@ -1,4 +1,4 @@
 .env
-talki_client/.env
-talki_server/.env
+# talki_client/.env
+# talki_server/.env
 node_modules

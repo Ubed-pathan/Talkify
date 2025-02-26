@@ -21,7 +21,7 @@ dotenv.config();
 
 const app: Express = express();
 const PORT: number = parseInt(process.env.PORT || '8000', 10);
-const frontendURL = process.env.FRONTEND_URL || '';
+const frontendURL = process.env.FRONTEND_URL || 'http://localhost:3003';
 
 if (!frontendURL) {
     console.error('Frontend URL not found');
